@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <!-- ----------------------------- -->
+    <!-- Contenedor -->
+    <!-- ----------------------------- -->
+    <div class="contenedor" id="Contenedor">
+        <nav class="sidemenu" id="Sidemenu">
+            <div class="top">
+                <div class="logo">
+                    <h2>Blaze <span>Web</span></h2>
+                </div>
+                <i class="fas fa-times btn-close-menu" id="btnCloseMenu"></i>
+            </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                        <i class="fas fa-house link-icon"></i>
+                        <span class="link-name">Inicio</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="portafolio.html" class="menu-link">
+                        <i class="fas fa-briefcase link-icon"></i>
+                        <span class="link-name">Portafolio</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="contacto.html" class="menu-link active">
+                        <i class="fas fa-phone link-icon"></i>
+                        <span class="link-name">Contacto</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="sobre_mi.html" class="menu-link">
+                        <i class="fas fa-question-circle link-icon"></i>
+                        <span class="link-name">Sobre M&iacute;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ----------------------------- -->
+        <!-- Header -->
+        <!-- ----------------------------- -->
+
+        <header>
+            <i class="fas fa-bars btn-sidemenu" id="btnSidemenu"></i>
+            <div class="logo">
+                <svg>
+                    <rect x="0" y="0"></rect>
+                </svg>
+                <h2>Blaze Web</h2>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <section class="card">
+                    <h3>Formulario de Contacto</h3>
+                    <p>
+                        Puedes llenar este formulario para contactar conmigo.
+                    </p>
+                    <!-- ----------------------------- -->
+                    <!-- Formulario de conatcto -->
+                    <!-- ----------------------------- -->
+                    <form action="https://formsubmit.co/dionijvargas@gmail.com" method="POST" class="form-contacto" id="formContacto">
+                        <div class="input-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="Nombre">
+                        </div>
+                        <div class="input-group">
+                            <label for="correo">Correo</label>
+                            <input type="email" id="correo" name="Correo">  
+                        </div>
+                        <div class="input-group">
+                            <textarea id="mensaje" cols="30" rows="5" name="Mensaje"></textarea>
+                            <label for="mensaje">Escribe tu mensaje</label>
+                        </div>
+                        <button type="submit" id="btnEnviar"><span>Enviar</span> <i class="fas fa-paper-plane"></i></button>
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </section>
+            </article>
+            <article>
+                <section class="card">
+                    <h3>Redes Sociales</h3>
+                    <p>
+                        Tambies puedes buscarme en mis redes sociales
+                    </p>
+
+                    <div class="redes">
+                        <div class="facebook">
+                            <a href="https://facebook.com/dioni.vmarin/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://twitter.com/theblaze985" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="instagram">
+                            <a href="https://instagram.com/theblaze98/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://linkedin.com/in/dionicio-vargas-832821237/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <script src="js/sidemenu.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
