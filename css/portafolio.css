@@ -1,21 +1,24 @@
 main article {
-    display: flex;
-    gap: 10px;
-}
-
-main article .card {
-    margin: 10px;
-    width: calc(50% - 10px);
     position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 
-main article .card .enlace-img {
+main article .item {
+    position: absolute;
+    display: block;
+    margin: 10px;
+    height: auto;
+    width: calc(50% - 20px);
+}
+
+main article .item .enlace-img {
     margin-bottom: 20px;
     width: 100%;
     display: block;
 }
 
-main article .card .enlace-img img {
+main article .item .enlace-img img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -23,4 +26,16 @@ main article .card .enlace-img img {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+    main article .item h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main article .item {
+        width: calc(100% - 20px);
+    }
 }
